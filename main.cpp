@@ -1,21 +1,15 @@
 #include <iostream>
-#include <thread>
-#include <chrono>
 #include "main.h"
-#include "lesson1.h"
-#include "lesson2.h"
-#include "lesson3.h"
-#include "lesson4.h"
-#include "lesson5.h"
-#include "lesson6.h"
+#include "factory.h"
+#include "abstract_factory.h"
+#include "singleton.h"
 
 using namespace std;
 
 int main() {
 	setlocale(LC_ALL, "ru");
-	//thread th1(doLesson1), th2(doLesson2);
-	//th1.join();
-	//th2.join();
-	doLesson6();
+	//doFactory();
+	//doAbstractFactory();
+	doSingleton();
 	return 0;
 }
